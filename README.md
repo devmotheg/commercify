@@ -1,4 +1,4 @@
-# Create Next Mern
+# Commercify
 
 Very basic implementation of an E-Commerce store, take your time testing it :^)
 
