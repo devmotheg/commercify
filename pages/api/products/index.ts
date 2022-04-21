@@ -41,7 +41,7 @@ const handler = async (
 					let filter = {};
 					if (req.query.kind === "userProducts") {
 						const user = await getCurrentUser(req);
-						filter = { _id: user._id };
+						filter = { seller: user._id };
 					}
 
 					delete req.query.action;
@@ -65,7 +65,7 @@ const handler = async (
 					let filter = {};
 					if (req.query.kind === "userProducts") {
 						const user = await getCurrentUser(req);
-						filter = { _id: user._id };
+						filter = { seller: user._id };
 					}
 
 					delete req.query.action;
