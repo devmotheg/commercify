@@ -118,7 +118,7 @@ const handler = async (
 					const imagePublicIds = [];
 					for (const image of body.images) {
 						const cloudinaryResponse = await cloudinary.uploader.upload(image, {
-							upload_preset: "dev_setups",
+							upload_preset: "dev_setups_commercify",
 						});
 						imagePublicIds.push(cloudinaryResponse.public_id);
 					}

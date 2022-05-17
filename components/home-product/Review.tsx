@@ -114,7 +114,7 @@ const Review = ({ review, setReviews, canReview }: ReviewProps) => {
 				<div className="w-full">
 					<span className="mb-1 block text-sm font-bold">{customer.name}</span>
 					<Rating size="small" readOnly value={review.rating} />
-					<p className="whitespace-pre">{review.comment}</p>
+					<p className="whitespace-pre-wrap break-all">{review.comment}</p>
 				</div>
 				{session?.user && session.id === customer._s && (
 					<>

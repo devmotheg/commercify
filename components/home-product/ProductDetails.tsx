@@ -72,14 +72,14 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
 	return (
 		<main className="container mx-auto min-h-full w-5/6">
 			<div className="mb-14 grid justify-center gap-12 lg:grid-cols-2">
-				<div className="relative h-fit max-h-full w-full max-w-sm justify-self-end lg:sticky lg:top-2">
+				<div className="relative flex h-fit max-h-full w-full max-w-sm flex-row-reverse items-start justify-center gap-4 justify-self-center lg:sticky lg:top-2 lg:justify-self-end">
 					<Image
 						className="h-auto max-h-96 w-full rounded bg-slate-100 object-contain p-1 align-top shadow-lg"
 						cloudName="devmotheg"
 						publicId={productQuery.data?.images[activeImage]}
 						alt="product image"
 					/>
-					<div className="absolute top-0 -left-2 -translate-x-full space-y-2">
+					<div className="space-y-2">
 						{productQuery.data?.images.map((m, i) => (
 							<div
 								key={m}
@@ -132,7 +132,9 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
 							<span className="block text-lg font-bold">
 								More details on this item
 							</span>
-							<p className="whitespace-pre">{productQuery.data?.description}</p>
+							<p className="whitespace-pre-wrap break-all">
+								{productQuery.data?.description}
+							</p>
 						</div>
 					)}
 					<div>
