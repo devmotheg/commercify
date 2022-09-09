@@ -45,7 +45,7 @@ Very basic implementation of an E-Commerce store, take your time testing it :^)
 24. Add more analytics such (e.g. amount of carting, product clicks, etc...).
 25. Make analytics page more flexible/customizable.
 26. Add more useful notifications/alerts (e.g. when the product is created, review is registered, etc...).
-27. Delete images from cloudinary when their corresponding product is deleted. (Automatic clean up!)
+27. Delete images from Cloudinary when their corresponding product is deleted. (Automatic clean up!)
 
 ## Author
 
